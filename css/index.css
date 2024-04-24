@@ -25,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: url(/img/equipo-global.png);
+    background-image: url(../img/equipo-global.png);
 }
 .section1 h2 {
     text-align: center;
@@ -91,7 +91,7 @@ body {
 .img-section1 {
     height: 400px;
     width: 100%;
-    background-image: url(/img/4.png);
+    background-image: url(../img/4.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
@@ -99,7 +99,7 @@ body {
 .img-section2 {
     height: 400px;
     width: 100%;
-    background-image: url(/img/3.png);
+    background-image: url(../img/3.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
