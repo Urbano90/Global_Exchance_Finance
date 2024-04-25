@@ -173,12 +173,14 @@
         display: block;
         margin: 0 auto;
     }  
+    .byline {
+        font-size: 21px;
+      }
     .logo-empresa {
         width: 80%;
     }  
-
     .nosotros {
-        height: 270px;
+        height: 200px;
     }
 }
 
