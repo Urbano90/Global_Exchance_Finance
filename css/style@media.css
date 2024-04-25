@@ -22,6 +22,7 @@
     }
     .menu {
         padding: 10px 0px;    /* 5px arriba y abajo y 0 en los lados */
+        background: var(--azul-fuerte);
     }
     .menu .contenedor {
         width: 95%;
@@ -175,6 +176,10 @@
     .logo-empresa {
         width: 80%;
     }  
+
+    .nosotros {
+        height: 270px;
+    }
 }
 
 @media screen and (max-width: 950px) {

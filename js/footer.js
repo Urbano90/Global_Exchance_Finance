@@ -29,7 +29,7 @@ const footerHTML = `
     <a href="https://www.tiktok.com/@u_digital.eg"><img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/tiktok.png" alt="tiktok"/>Tik-tok</a>
 </div>
 </div>
-<p class="copy"><i class="fa fa-copyright" aria-hidden="true"> Copyright 2023. Todos los derechos reservados | U-DIGITAL.</i></p>
+<p class="copy"><i class="fa fa-copyright" aria-hidden="true"> Copyright 2023. Todos los derechos reservados | Global Exchance Finance S.A.</i></p>
 
 `;
 document.querySelector(".footer").innerHTML += footerHTML;

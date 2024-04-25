@@ -25,12 +25,15 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: url(../img/equipo-global.png);
+    background-image: url(../img/transferencia-bancaria-demora.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 .section1 h2 {
     text-align: center;
     padding: 6px;
-    background: var(--azul-claro);
+    color: var(--naranja);
 }
 .nosotros-general {
     display: flex;
@@ -47,19 +50,20 @@ body {
     align-items: center;
     width: 40%;
     margin: 0 auto;
-    height: 300px;
+    height: 400px;
 }
 .nosotros {
     display: grid;
-    padding: 5px;
-    background: var(--azul-fuerte);
-    margin: 3px;
-    border-radius: 8px;
+    padding: 3px;
+    background: #170655e7;
+    margin: 2px;
+    border-radius: 7px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.481);
     font-size: 12px;
-    height: 230px;
+    height: 250px;
     width: 100%;
     color: #fff;
+    padding-top: 10px;
 }
 .container-icon {
     background: var(--naranja);
@@ -136,12 +140,13 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
-        height: 300px;
         justify-content: space-between;
         text-align: center;
     }
     .nosotros-servicios {
-        width: 95%;
+        width: 98%;
+        justify-content: center;
+        align-items: center;
     }
     .section2 {
         grid-template-columns: 1fr;
