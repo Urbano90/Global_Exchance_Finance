@@ -68,20 +68,16 @@ main article {
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    border: 1px solid grey;
 }
 .menu .contenedor-botones-menu button img {
     width: 30px;
     height: 30px;
     object-fit: cover;
 }
-.menu .contenedor-botones-menu button:hover {
-    border: 1px solid #fff;
-}
+
 /* bloqueamos el boton de cerrar menu en los dispositivos desktop*/
 .menu .contenedor-botones-menu .btn-menu-cerrar {
     display: none; /* Ocultamos el icono de cerrar menu para que no se vea en dispositivos desktop, si le ponemos flex, aparece */
-    border: 1px solid grey;
 }
 /* Cuando el boton del menu está activo hacemos aparecer el icono de cerrar menu, lo activamos desde el javascript */
 .menu .contenedor-botones-menu .btn-menu-cerrar.activo {
@@ -588,6 +584,7 @@ footer {
     background: var(--azul-fuerte);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
     color: #fff;
+    padding: 10px;
 }
 .footer .box-container {
     display: grid;
