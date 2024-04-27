@@ -6,6 +6,7 @@ const footerHTML = `
 <div class="box">
     <h3>Oficina Central</h3>
     <p>C/ Rey Boncoro-Malabo G.E</p>
+    <img class="logo-global" src="./icon/LOGO-GLOBAL.png" alt="icon-arriba">
 </div>
 
 <div class="box">

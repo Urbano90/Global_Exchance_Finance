@@ -29,11 +29,10 @@
     }
     .menu .contenedor-botones-menu {
         display: flex;
-        padding: 0 5px;
+        justify-content: end;
+        
     }
-    .menu .contenedor-botones-menu button {
-        background: transparent;
-    }
+   
     .menu .contenedor-botones-menu .btn-menu-cerrar {
         display: none; /* mostramos el icono de cerrar menu para que no se vea en dispositivos moviles */
     }
@@ -158,21 +157,25 @@
         width: 25%;
         height: 100%;
     }
-    .form {
 
-        width: 90%;
-        height: 100%;
-    }
 @media screen and (max-width: 950px) {
     .contacta-detalle {
         display: block;
-    }     
+    }  
+    .footer .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        font-size: 13px;
+    }    
+}   
 }
 @media screen and (max-width: 750px) {
     .container-logo-u-digital{
         display: block;
         margin: 0 auto;
-    }  
+    } 
+    .starwars-demo {
+        width: 18em;
+    } 
     .byline {
         font-size: 21px;
       }
@@ -184,10 +187,3 @@
     }
 }
 
-@media screen and (max-width: 950px) {
-    .footer .box-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        font-size: 13px;
-    }    
-}
-}

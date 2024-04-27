@@ -73,7 +73,7 @@
       position: relative;
       justify-content: center;
       align-items: center;
-      height: 280px;
+      height: 200px;
   }
   .starwars-demo {
       display: flex;
@@ -83,7 +83,7 @@
       position: relative;
       transform: translate(-50%, -50%);
       width: 22em;
-      top: 100px;
+      top: 60px;
       left: 50%;
   }
   .starwars-demo img {
@@ -104,7 +104,7 @@
   }
   .wars {
     bottom: 10px;
-    width: 250px;
+    width: 200px;
     height: 200px;
     object-fit: cover;
   }

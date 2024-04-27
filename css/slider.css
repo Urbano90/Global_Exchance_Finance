@@ -15,7 +15,7 @@
     overflow: hidden;
     position: relative;
     background: #fff;
-    border-bottom: 7px solid var(--azul-fuerte);
+    border-bottom: 13px solid var(--azul-fuerte);
 }
 .title-slider {
     color: #002868;
@@ -82,11 +82,11 @@
     text-align: center;
     border-radius: 4px;
     cursor: pointer;
-    background: var(--azul-fuerte);
+    background: #90D26D;
     color: #fff;
 }
 .slider__btn:hover {
-    background: #efed83d9;
+    background: #C5FF95;
 }
 .slider__btn--left {
     left: 10px;
