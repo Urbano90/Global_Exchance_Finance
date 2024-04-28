@@ -30,29 +30,35 @@
     .menu .contenedor-icon-menu {
         display: flex;
         justify-content: end;
-        
     }
-   
-    .menu .contenedor-icon-menu .icon-menu-cerrar {
+    .icon-menu-cerrar {
         display: none; /* mostramos el icono de cerrar menu para que no se vea en dispositivos moviles */
     }
+    .icon-menu.activo {
+        display: flex;
+        object-fit: contain;
+    }
+     /* Cuando el boton del menu está activo hacemos aparecer el icono de cerrar menu, lo activamos desde el javascript */
+    .btn-menu-cerrar.activo {
+        display: flex;
+    }
     .menu .contenedor-enlaces-nav {
-        padding: 20px;
+        padding: 10px;
         flex-direction: column;  /* hace que el nav se ponga hacia abajo*/
         align-items: flex-start;
         justify-content: flex-start;
         position: fixed;
+        text-transform: none;
         left: 0;
-        top: 55px;
-        background: var(--azul-fuerte);
-        color: #000;
+        top: 0;
+        background: var(--naranja);
         box-shadow: 0px 3px 6px rgba(31, 32, 34, 0.752);
-        height: 100vh;
-        width: 85%;
+        height: 30vh;
+        width: 70%;
         z-index: 2000;
         overflow: auto; 
         transition: .6s ease all;
-        transform: translate(-100%); /* saca el menu en la pantalla llevandolo un 100% menos de la pantalla a la izquierda*/
+        transform: translate(-110%); /* saca el menu en la pantalla llevandolo un 100% menos de la pantalla a la izquierda*/
     }
     .menu .contenedor-enlaces-nav.activo {  /* vamos activar de nuevo haciendo aparecer el menu en la pantalla con javascript*/
         transform: translate(0);
@@ -74,10 +80,9 @@
     .menu .enlaces a {
         display: block;
         margin: 5px 0;
-        padding: 5px;
+        padding: 3px;
         position: relative;
-        color: #000;
-        background: #ccc;
+        font-size: 14px;
     }
     .enlaces a img {
         display: inline;

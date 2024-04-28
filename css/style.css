@@ -56,29 +56,21 @@ main article {
 /* Trabajamos con los iconos del menu y cerrar menu*/
 .menu .contenedor-icon-menu {
     display: none;  /* Ocultamos los iconos de menu para que no se vea en dispositivos desktop, si le ponemos flex, aparece */
-    justify-content: space-between;  /* Hacemos que los iconos de menu y cerrar menu se separen de extremo a extremo */
 }
-.menu .contenedor-icon-menu div {
+.menu .contenedor-icon-menu {
     font-size: 20px;   
     padding: 2px 4px;
-    display: grid;
     cursor: pointer;
-    align-items: center;
-    justify-content: center;
 }
-.menu .contenedor-icon-menu div img {
-    width: 50px;
-    height: 45px;
-    object-fit: cover;
+.menu .contenedor-icon-menu  {
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
 }
-
 /* bloqueamos el boton de cerrar menu en los dispositivos desktop*/
-.menu .contenedor-icon-menu .btn-menu-cerrar {
+.btn-menu-cerrar {
     display: none; /* Ocultamos el icono de cerrar menu para que no se vea en dispositivos desktop, si le ponemos flex, aparece */
-}
-/* Cuando el boton del menu está activo hacemos aparecer el icono de cerrar menu, lo activamos desde el javascript */
-.menu .contenedor-icon-menu .btn-menu-cerrar.activo {
-    display: flex;
 }
 .menu .contenedor-enlaces-nav {
     display: flex;
@@ -161,16 +153,17 @@ main article {
     display: grid;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
     gap: 5px;
     position: absolute;
     z-index: 100;
     top: 57px;
     right: 17%;
     font-size: 15px;
-    background: #fff;
-    box-shadow: 0px 3px 6px rgba(64, 59, 59, 0.3);
+    background: #108dc7;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.481);
     padding-bottom: 20px;
+    transition: .6s ease all;
 }
 .agencias::before {  /* aquí creamos el triangulo superior blanco que está en en categorías*/
     content: "";  /* contenido vacio */
@@ -178,15 +171,17 @@ main article {
     background: transparent;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #fff;
+    border-bottom: 10px solid #108dc7;
     position: absolute;
     top: -6px;
-    left: 32%;
+    left: 37%;
 }
 .agencia {
-    color: var(--azul-claro);
+    color: #fff;
     padding: 5px;
     text-transform: uppercase;
+    background: #1064f1;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.481);
 }
 .agencia:hover {
     color: var(--azul-fuerte);

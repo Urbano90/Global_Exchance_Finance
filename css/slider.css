@@ -51,6 +51,10 @@
 .slider__section:hover {
     opacity: .6;
 }
+.slider__section:hover .slider__link {
+    background: #0f0f0f;
+   transform: scale(1.1);
+}
 .slider__section .slider__img{
     display: block;
     width: 17rem;
@@ -120,7 +124,7 @@
     padding: 6px 7px;
     text-align: center;
     text-decoration: none;
-    background: #5492ef;
+    background: #3b3d41;
     color: #fff;
     margin: 0 auto;
     font-weight: lighter;
@@ -129,9 +133,6 @@
     top: 60%;
     left: 30%;
     cursor: pointer;
+    border-radius: 5px;
 }
-.slider__link:hover {
-   color: var(--azul-fuerte);
-   background: #73a5f1;
-   transform: scale(.9);
-}
+

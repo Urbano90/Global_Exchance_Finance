@@ -105,6 +105,14 @@ body {
     margin: 0 auto;
     background: #00000078;
 }
+.oxidente-container:hover  {
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background:transparent;
+    background-image: url(../img/currency_banner_1440_400.png);
+    transition: 1.4s ease all;
+}
 .oxidente h2 {
     display: grid;
     justify-content: flex-end;
