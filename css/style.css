@@ -13,7 +13,6 @@
 }
 body {
     color: #130f40;
-    background: #DFF5FF;
 }
 a {
     text-decoration: none;
@@ -55,29 +54,29 @@ main article {
     rotate: 360deg;
 }
 /* Trabajamos con los iconos del menu y cerrar menu*/
-.menu .contenedor-botones-menu {
+.menu .contenedor-icon-menu {
     display: none;  /* Ocultamos los iconos de menu para que no se vea en dispositivos desktop, si le ponemos flex, aparece */
     justify-content: space-between;  /* Hacemos que los iconos de menu y cerrar menu se separen de extremo a extremo */
 }
-.menu .contenedor-botones-menu button {
+.menu .contenedor-icon-menu div {
     font-size: 20px;    padding: 2px 4px;
     display: grid;
     cursor: pointer;
     align-items: center;
     justify-content: center;
 }
-.menu .contenedor-botones-menu button img {
+.menu .contenedor-icon-menu div img {
     width: 35px;
     height: 35px;
     object-fit: cover;
 }
 
 /* bloqueamos el boton de cerrar menu en los dispositivos desktop*/
-.menu .contenedor-botones-menu .btn-menu-cerrar {
+.menu .contenedor-icon-menu .btn-menu-cerrar {
     display: none; /* Ocultamos el icono de cerrar menu para que no se vea en dispositivos desktop, si le ponemos flex, aparece */
 }
 /* Cuando el boton del menu está activo hacemos aparecer el icono de cerrar menu, lo activamos desde el javascript */
-.menu .contenedor-botones-menu .btn-menu-cerrar.activo {
+.menu .contenedor-icon-menu .btn-menu-cerrar.activo {
     display: flex;
 }
 .menu .contenedor-enlaces-nav {

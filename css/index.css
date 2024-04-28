@@ -25,22 +25,22 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: #DFF5FF;
+    background: #108dc7;
+    padding: 8px;
 }
 .title-section1 {
     text-align: center;
     padding: 6px;
-    color: var(--azul-claro);
+    color: #fff;
     padding-top: 10px;
     text-transform: uppercase;
     font-size: 23px;
-    background: #DFF5FF;
+    background: #108dc7;
 }
 .nosotros-general {
     justify-content: center;
     text-align: center;
     padding-bottom: 10px;
-    margin: 8px;
 }
 .nosotros-servicios {
     display: flex;
@@ -83,12 +83,13 @@ body {
 }
 .oxidente-container {
     width: 100%; 
-    background: #FCFFE0;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+    background-image: url(../img/currency_banner_1440_400.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-position: center;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+    background-position: start;
+    color: #fff;
 }
 .oxidente-container-img {
     margin: 0 auto;
@@ -98,14 +99,9 @@ body {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    height: 320px;
+    height: 400px;
     width: 100%;
     margin: 0 auto;
-    background-image: url(../img/eu-eeuu.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: start;
-    background-position: start;
 }
 .oxidente h2 {
     display: grid;
@@ -117,17 +113,20 @@ body {
 }
 .oxidente-img {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    margin: 5px;
 }
-
-.oxidente-info, .oxidente-container-img {
+.oxidente-container-img {
+    background-image: url(../img/eu-eeuu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: start;
+    background-position: center;
+}
+.oxidente-info {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    background: #fcffe08e;
     width: 100%;
     height: 100%;
 }
@@ -139,7 +138,7 @@ body {
     margin: 0 auto;
     font-size: 18px;
     position: relative;
-    top: 30%;
+    top: 40%;
 }
 .africa-container {
     width: 100%; 
@@ -236,7 +235,7 @@ body {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
-    background: #DFF5FF;
+    background: #77bfe0;
 }
 .img-divisas {
     width: 100%; 
@@ -248,11 +247,9 @@ body {
     background-position: start;
 }
 .info-divisas {
-    display: grid;
+    display: block;
     justify-content: center;
-    align-items: center;
-    padding: 6px;
-    margin: 10px;
+    margin: 0 auto;
 }
 
 .info-divisas h2 {
@@ -263,13 +260,15 @@ body {
     margin-bottom: 10px; 
     background: var(--azul-fuerte);
     text-align: center;
+    padding: 5px 0;
 }
 .info-divisas ul {
     display: grid;
     justify-content: center;
     align-items: center;
     list-style: none;
-    font-size: 17px;
+    font-size: 16px;
+    padding: 6px;
 }
 .info-divisas li span {
     color: var(--azul-claro);
@@ -300,7 +299,7 @@ body {
     color: #130f40;
 }
 .section-info-gmt {
-    background: #dff5ff6f;
+    background: #77bfe0b1;
     padding: 5px;
 }
 .img-section1 h1 {
@@ -348,7 +347,10 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
+}
+.gmt1 h3 {
     color: red;
+    font-size: 16px;
 }
 .gmt1 a:hover {
     color: #000;

@@ -27,13 +27,13 @@
     .menu .contenedor {
         width: 95%;
     }
-    .menu .contenedor-botones-menu {
+    .menu .contenedor-icon-menu {
         display: flex;
         justify-content: end;
         
     }
    
-    .menu .contenedor-botones-menu .btn-menu-cerrar {
+    .menu .contenedor-icon-menu .icon-menu-cerrar {
         display: none; /* mostramos el icono de cerrar menu para que no se vea en dispositivos moviles */
     }
     .menu .contenedor-enlaces-nav {
