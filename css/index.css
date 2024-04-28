@@ -37,23 +37,29 @@ body {
     background: #DFF5FF;
 }
 .nosotros-general {
-    width: 100%;
     justify-content: center;
     text-align: center;
     padding-bottom: 10px;
+    margin: 8px;
 }
 .nosotros-servicios {
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 0 auto;
+    gap: 10px;
 }
 .nosotros {
     display: grid;
     padding: 6px;
-    margin: 2px;
-    border-radius: 7px;
+    border-radius: 3px;
     width: 100%;
+    text-align: start;
+    background: #beddf4;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.481);
+}
+.nosotros h3 {
+    text-align: center;
 }
 .container-icon {
     display: flex;
@@ -92,7 +98,7 @@ body {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 320px;
     width: 100%;
     margin: 0 auto;
     background-image: url(../img/eu-eeuu.png);
@@ -115,12 +121,7 @@ body {
     align-items: center;
     margin: 5px;
 }
-.oxidente-img .bdeao {
-    height: 120px;
-    height: 120px; 
-    object-fit: contain;
-    padding: 5px;
-} 
+
 .oxidente-info, .oxidente-container-img {
     display: grid;
     justify-content: center;
@@ -137,6 +138,8 @@ body {
     width: 320px;
     margin: 0 auto;
     font-size: 18px;
+    position: relative;
+    top: 30%;
 }
 .africa-container {
     width: 100%; 
@@ -251,13 +254,15 @@ body {
     padding: 6px;
     margin: 10px;
 }
+
 .info-divisas h2 {
     text-transform: uppercase;
     font-size: 21px;
-    color: var(--azul-claro);
-    text-align: center;
-    border-bottom: 2px dashed var(--azul-claro);
+    color: #DFF5FF;
+    border: 6px solid var(--naranja);
     margin-bottom: 10px; 
+    background: var(--azul-fuerte);
+    text-align: center;
 }
 .info-divisas ul {
     display: grid;
@@ -292,12 +297,16 @@ body {
     margin: 0 auto;
     padding: 10px;
     background: #0000007b;
-    color: #000;
+    color: #130f40;
+}
+.section-info-gmt {
+    background: #dff5ff6f;
+    padding: 5px;
 }
 .img-section1 h1 {
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
-    color: var(--naranja);
+    color: var(--azul-fuerte);
 }
 .img-section1 img {
     display: flex;
@@ -307,9 +316,7 @@ body {
     margin: 0 auto;
 }
 .img-section1 h2 {
-    text-align: center;
     font-size: 17px;
-    color: red;
 }
 .img-section2 {
     background-image: url(../img/3.png);
@@ -333,7 +340,7 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 10px;
-    font-size: 10px;
+    font-size: 11px;
     background:  #0000007b;
     padding-bottom: 10px;
 }
@@ -395,6 +402,7 @@ body {
     .oxidente {
         grid-template-columns: 1fr;
         font-size: 15px;
+        height: 350px;
     }.oxidente h2 {
         font-size: 22px;
     }
@@ -411,5 +419,8 @@ body {
     }
     .img-divisas {
         height: 200px;
+    }
+    .info-divisas h2 {
+        font-size: 16px;
     }
 }
