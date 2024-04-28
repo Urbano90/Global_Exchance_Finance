@@ -140,7 +140,7 @@ body {
     margin: 0 auto;
     font-size: 18px;
     position: relative;
-    top: 20%;
+    top: 35%;
 }
 .africa-container {
     width: 100%; 
@@ -271,12 +271,15 @@ body {
     justify-content: center;
     align-items: center;
     list-style: none;
-    font-size: 16px;
+    font-size: 17px;
     padding: 6px;
 }
 
 .section2-general {
     background: var(--azul-claro);
+}
+.info-divisas li span {
+    border-bottom: 1px solid var(--azul-fuerte);
 }
 .section2 {
     display: grid;
@@ -306,7 +309,7 @@ body {
 .img-section1 h1 {
     font-size: 26px;
     text-align: center;
-    color: var(--azul-fuerte);
+    color: #fff;
 }
 .img-section1 img {
     display: flex;
@@ -317,6 +320,7 @@ body {
 }
 .img-section1 h2 {
     font-size: 17px;
+    color: #ccc;
 }
 .img-section2 {
     background-image: url(../img/3.png);
@@ -405,9 +409,13 @@ body {
     .oxidente {
         grid-template-columns: 1fr;
         font-size: 15px;
-        height: 350px;
     }.oxidente h2 {
         font-size: 22px;
+    }
+    .oxidente p {
+        font-size: 18px;
+        position: relative;
+        top: 10%;
     }
     .africa {
         grid-template-columns: 1fr;
@@ -424,6 +432,6 @@ body {
         height: 200px;
     }
     .info-divisas h2 {
-        font-size: 16px;
+        font-size: 17.5px;
     }
 }
