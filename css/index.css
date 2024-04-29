@@ -267,10 +267,8 @@ body {
     text-transform: uppercase;
     font-size: 21px;
     color: #DFF5FF;
-    border: 6px solid var(--naranja); 
-    background: #108dc7;
     text-align: center;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 .info-divisas ul {
     display: grid;
@@ -440,6 +438,7 @@ body {
         position: absolute;
         left: 0;
         z-index: 0;
+        background-size: contain;
     }
     .info-divisas {
         margin-left: 85%;
@@ -447,26 +446,41 @@ body {
         width: 300px;
     }
     .info-divisas ul {
-        font-size: 16px;
+        font-size: 17px;
     }
     .img-divisas {
         height: 100%;
     }
     .contaoner-general-divisas h2 {
-        font-size: 17.5px;
-    }
-    
+        font-size: 19px;
+    } 
 }
 @media screen and (max-width: 630px) {
+    .img-divisas {
+        width: 100%; 
+        position: absolute;
+        left: 0;
+        z-index: 0;
+        background-size: cover;
+    }
     .info-divisas {
-        margin-left: 40%;
         z-index: 1000;
         width: 300px;
         background: #ffffff41;
+        position: relative;
+        right: 10px;
     }
+    
 
 }
 @media screen and (max-width: 550px) {
+        .img-divisas {
+        width: 100%; 
+        position: absolute;
+        left: 0;
+        z-index: 0;
+        background-size: cover;
+    }
     .info-divisas {
         margin-left: 20%;
         z-index: 1000;
