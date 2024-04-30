@@ -16,6 +16,12 @@ linkAgencias.addEventListener('click', () => {
    }
 });
 
+contenedorEnlacesNav.addEventListener('click', () => {
+  if(!esDispositivoMovil()) {    /* si no es dispositivo movil menor de 800px no muestra la grids al pasar el cursor*/
+    agencias.style.display="none";;
+   }
+});
+
 main.addEventListener('click', () => {
   if(!esDispositivoMovil()) {    /* si no es dispositivo movil cuando cliqueamos el main, desaparecen las agencias*/
     agencias.classList.remove('activo');
@@ -33,6 +39,7 @@ iconMenuCerrar.addEventListener('click', () => {
   if(esDispositivoMovil()) {    /* si no es dispositivo movil cuando cliqueamos el main, desaparecen las agencias*/
     iconMenu.style.display="block";
     iconMenuCerrar.style.display="none";
+    agencias.classList.remove('activo');
     contenedorEnlacesNav.classList.remove('activo')
    }
 });

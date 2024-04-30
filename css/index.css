@@ -159,6 +159,9 @@ body {
     background-position-x: center;
     background-position: center;
 }
+.africa-container:hover .africa {
+    background: #41340a11;
+}
 .africa {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -265,7 +268,7 @@ body {
 }
 .contaoner-general-divisas h2 {
     text-transform: uppercase;
-    font-size: 21px;
+    font-size: 28px;
     color: #fff;
     text-align: center;
     padding: 10px 0;

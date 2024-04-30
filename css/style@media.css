@@ -96,6 +96,9 @@
         display: inline;
         height: 20px;
     }
+    .logo-global {
+        display: block;
+    }
     .enlaces  a {
         display: flex;
         align-items: center;

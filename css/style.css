@@ -341,6 +341,9 @@ main article {
 .enlaces a img {
     display: none;
 }
+ .logo-global {
+    display: none;
+}
 .grids .subtitulo {
     font-size: 19px;
     font-weight: bolder;
