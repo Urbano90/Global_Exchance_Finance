@@ -51,14 +51,22 @@
         text-transform: none;
         left: 0;
         top: 0;
-        background: var(--naranja);
+        background: var(--azul-fuerte);
         box-shadow: 0px 3px 6px rgba(31, 32, 34, 0.752);
-        height: 30vh;
+        height: 300px;
         width: 70%;
         z-index: 2000;
         overflow: auto; 
         transition: .6s ease all;
         transform: translate(-110%); /* saca el menu en la pantalla llevandolo un 100% menos de la pantalla a la izquierda*/
+    }
+    .agencias.activo {
+        display: grid;
+        top: 80px;
+        left: 0;
+    }
+    .agencias::before {  /* aquí creamos el triangulo superior blanco que está en en categorías*/
+        left: 22%;
     }
     .menu .contenedor-enlaces-nav.activo {  /* vamos activar de nuevo haciendo aparecer el menu en la pantalla con javascript*/
         transform: translate(0);
