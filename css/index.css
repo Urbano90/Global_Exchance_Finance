@@ -4,9 +4,12 @@
 :root {
     --azul-fuerte: #170655;
     --naranja: orange;
-    --azul-claro:#2e75c7;
+    --azul-claro:#108dc7;
+    --blanco:#fff;
+    --azul-cielo: #7BC9FF;
+    --azul-marino: #beddf4;
     --border: .1rem solid rgba(0,0,0,.1);
-    --box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    --box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.481);
 }
 main article {
     color: #d2d2d2;
@@ -20,22 +23,39 @@ body {
     background-position: center;
     font-size: 14px;
 }
+.button {
+    padding: 7px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: var(--blanco);
+    cursor: pointer;
+    background: #90D26D;
+    color: #fff;
+    width: 130px;
+    margin: 5px auto;
+}
+.button:hover {
+    color: #000;
+    background: #C5FF95;
+    transform: scale(.9);
+}
 .section1 {
     padding: 0;
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: #108dc7;
+    background: var(--azul-claro);
     padding: 8px;
 }
 .title-section1 {
     text-align: center;
     padding: 6px;
-    color: #fff;
+    color: var(--blanco);
     padding-top: 10px;
     text-transform: uppercase;
     font-size: 23px;
-    background: #108dc7;
+    background: var(--azul-claro);
 }
 .nosotros-general {
     justify-content: center;
@@ -55,8 +75,8 @@ body {
     border-radius: 3px;
     width: 100%;
     text-align: start;
-    background: #beddf4;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.481);
+    background: var(--azul-cielo);
+    box-shadow: var(--box-shadow);
 }
 .nosotros h3 {
     text-align: center;
@@ -65,11 +85,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #7BC9FF;
+    background: var(--azul-marino);
     width: 50px;
     height: 50px;
     border-radius: 100px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.481);
+    box-shadow: var(--box-shadow);
     text-align: initial;
     margin: 0 auto;
 }
@@ -83,13 +103,13 @@ body {
 }
 .oxidente-container {
     width: 100%; 
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
+    box-shadow: var(--box-shadow);
     background-image: url(../img/currency_banner_1440_400.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
     background-position: start;
-    color: #fff;
+    color: var(--blanco);
 }
 .oxidente-container-img {
     margin: 0 auto;
@@ -150,6 +170,48 @@ body {
     position: relative;
     top: 35%;
 }
+.container-divisas {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    justify-content: center;
+    background: var(--azul-claro);
+    box-shadow: var(--box-shadow);
+}
+.img-divisas {
+    width: 100%; 
+    height: 300px;
+    background-image: url(../img/cambios1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: start;
+    background-position: start;
+}
+.info-divisas {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    color: var(--blanco);
+}
+.contaoner-general-divisas h2 {
+    font-size: 28px;
+    color: var(--blanco);
+    text-align: center;
+}
+.info-divisas ul {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    padding: 6px;
+}
+.section2-general {
+    background: var(--azul-claro);
+}
+.info-divisas li span {
+    font-weight: bold;
+}
 .africa-container {
     width: 100%; 
     background-image: url(../img/africa.jpg);
@@ -158,6 +220,7 @@ body {
     background-size: cover;
     background-position-x: center;
     background-position: center;
+    box-shadow: var(--box-shadow);
 }
 .africa-container:hover .africa {
     background: #41340a11;
@@ -179,7 +242,7 @@ body {
     align-items: center;
     width: 320px;
     margin: 0 auto;
-    color: #fff;
+    color: var(--blanco);
     font-size: 28px;
 }
 .africa-img {
@@ -193,18 +256,18 @@ body {
     height: 80px;
     height: 80px;
     border-radius: 100%;
-    background: #fff;
+    background:  var(--blanco);
     object-fit: contain;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.481);
+    box-shadow: var(--box-shadow);
 } 
 .africa-img .bdeao {
     height: 70px;
     height: 70px;
     border-radius: 6px;
-    background: #fff;
+    background: var(--blanco);
     object-fit: contain;
     padding: 5px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.481);
+    box-shadow: var(--blanco);
 } 
 .africa .cemac:hover {
     transform: scale(.9);
@@ -227,88 +290,28 @@ body {
     color: #fff;
     font-size: 18px;
 }
-.button {
-    padding: 7px;
-    font-size: 15px;
-    border-radius: 3px;
-    border: none;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, .30);
-    cursor: pointer;
-    background: #90D26D;
-    color: #fff;
-    width: 130px;
-    margin: 5px auto;
-}
-.button:hover {
-    color: #000;
-    background: #C5FF95;
-    transform: scale(.9);
-}
-.container-divisas {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    align-items: center;
-    justify-content: center;
-    background: #108dc7;
-}
-.img-divisas {
-    width: 100%; 
-    height: 300px;
-    background-image: url(../img/cambios1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: start;
-    background-position: start;
-}
-.info-divisas {
-    display: block;
-    justify-content: center;
-    margin: 0 auto;
-    color: #fff;
-}
-.contaoner-general-divisas h2 {
-    text-transform: uppercase;
-    font-size: 28px;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-.info-divisas ul {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    font-size: 18px;
-    padding: 6px;
-}
-
-.section2-general {
-    background: var(--azul-claro);
-}
-.info-divisas li span {
-    font-weight: bold;
-}
 .section2 {
-    display: grid;
+  /*  display: grid;
     grid-template-columns: 1fr;
     width: 100%;
     margin: 0 auto;
     background-image: url(../img/Map.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;  */
     font-size: 17px;
-}
+    background: var(--azul-claro);
+    color: var(--blanco);
+}  
 .info-section2 {
     padding: 10px;
     font-size: 18px;
 }
-
 .img-section1 {
     display: block;
     margin: 0 auto;
-    background: #00000095;
-    color: #fff;
+  /*  background: #00000095;  
+    color: #fff;  */
 }
 .section-info-gmt {
     display: grid;
@@ -324,16 +327,18 @@ body {
 }
 .img-section1 img {
     display: flex;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
     margin: 0 auto;
 }
 .img-section1 h2 {
-    font-size: 17px;
+    font-size: 23px;
     color: var(--azul-fuerte);
     margin: 0 auto;
 }
+/*
+
 .img-section2 {
     background-image: url(../img/3.png);
     background-repeat: no-repeat;
@@ -372,11 +377,12 @@ body {
     color: #000;
 }
 .gmt1 a {
-    color: #fff;
+    color: var(--blanco);
 }
 .gmt1 h4 {
     color: var(--naranja);
 }
+*/
 /* Suscribirse end*/
 @media screen  and (max-width: 1200px) {
     .section1 {
@@ -420,7 +426,7 @@ body {
     .oxidente {
         grid-template-columns: 1fr;
         font-size: 15px;
-    }.oxidente h2 {
+    }.oxidente h2, .contaoner-general-divisas h2,  .africa-info h2, .section-info-gmt h2 {
         font-size: 22px;
     }
     .oxidente p {
@@ -432,9 +438,6 @@ body {
         grid-template-columns: 1fr;
         font-size: 15px;
         padding: 10px;
-    }
-    .africa-info h2 {
-        font-size: 22px;
     }
     .container-divisas {
         position: relative;
@@ -453,14 +456,11 @@ body {
         width: 300px;
     }
     .info-divisas ul {
-        font-size: 17px;
+        font-size: 18px;
     }
     .img-divisas {
         height: 100%;
     }
-    .contaoner-general-divisas h2 {
-        font-size: 19px;
-    } 
 }
 @media screen and (max-width: 630px) {
     .img-divisas {
@@ -486,6 +486,8 @@ body {
 
 }
 
+
+/*
 <div class="gmt-container">
 <h2>Puntos operativos</h2>
 <div class="gmt-general">

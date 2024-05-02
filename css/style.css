@@ -156,7 +156,7 @@ main article {
     padding: 10px;
     gap: 5px;
     position: absolute;
-    z-index: 100;
+    z-index: 1000;
     top: 57px;
     right: 17%;
     font-size: 15px;

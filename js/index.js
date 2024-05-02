@@ -9,27 +9,23 @@ const iconMenuCerrar = document.querySelector(".icon-menu-cerrar");
 const  esDispositivoMovil = () => window.innerWidth <= 900;   /* cuando es un dispositivo movil y la pantalla es menor a 800px */
 const categorias = document.querySelector(".categorias");
 
-
 linkAgencias.addEventListener('click', () => {
-  if(!esDispositivoMovil()) {    /* si no es dispositivo movil menor de 800px no muestra la grids al pasar el cursor*/
+  if(!esDispositivoMovil()) {    /* En dispositivos de escritorio, al pulsar LinkAgencias, se habre las grids de agencias*/
     agencias.classList.toggle('activo');
    }
 });
-
 contenedorEnlacesNav.addEventListener('click', () => {
-  if(!esDispositivoMovil()) {    /* si no es dispositivo movil menor de 800px no muestra la grids al pasar el cursor*/
-    agencias.style.display="none";;
+  if(!esDispositivoMovil()) {    
+    agencias.style.display="none";
    }
 });
-
 main.addEventListener('click', () => {
-  if(!esDispositivoMovil()) {    /* si no es dispositivo movil cuando cliqueamos el main, desaparecen las agencias*/
+  if(!esDispositivoMovil()) {    
     agencias.classList.remove('activo');
    }
 });
-
 iconMenu.addEventListener('click', () => {
-  if(esDispositivoMovil()) {    /* si no es dispositivo movil cuando cliqueamos el main, desaparecen las agencias*/
+  if(esDispositivoMovil()) {    /* si es dispositivo movil, al pulsar el iconMenu, se habre el contenedor de enlaces(opciones) y aparece el boton cerrarMenu*/
     iconMenu.style.display="none";
     iconMenuCerrar.style.display="block";
     contenedorEnlacesNav.classList.add('activo')
