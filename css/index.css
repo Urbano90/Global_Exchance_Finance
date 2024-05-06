@@ -22,7 +22,99 @@ body {
     height: 100%;
     background-position: center;
     font-size: 14px;
+    background: var(--azul-claro);
 }
+
+.dishes-grid {
+    display: grid;  /* para determinar que es una grilla*/
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));  /* para que columna sea desplegable. que sea de una fraccion*/
+    grid-auto-rows: 1fr;  /* determina las filas*/
+    gap: 5px;  /* gap aqui le da el espacio entre las imagenes*/
+    justify-content: center ;  /* sirve para centrar la grilla*/
+    padding: 5px;
+ }
+ .dishes-title {
+     color: #333;
+     font-weight: bold;
+     margin-bottom: 50px;
+     font-size: 1.8rem;
+     margin: 0;
+ }
+ .dishes-item {
+    width: 100%;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    background: var(--blanco);
+    border-radius: 7px;
+ }
+ .dishes-item img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 7px;
+ }
+ .dishes-item__big {
+     grid-area: 1 / 1 / 3 / 3;   /* mueve la imagen grande */
+     height: 100%;  /* tamaño de la img grande*/
+     width: 100%;
+     box-shadow: var(--box-shadow);
+     border-radius: 7px;
+ }
+ .grid-info {
+    position: relative;
+    top: -101%;
+    left: 0;
+    z-index: 1000;
+    font-size: 13.2px;
+    color: var(--blanco);
+    padding: 5px;
+    background: #00000067;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 7px;
+ }
+ .grid-info:hover {
+    background: #ffffff5e;
+    color: var(--azul-fuerte);
+ }
+ .dishes-item__big .grid-info {
+    position: relative;
+    top: -101%;
+    left: 0;
+    z-index: 1000;
+    font-size: 14.2px;
+    color: var(--blanco);
+    padding: 5px;
+    background: #00000067;
+    height: 100%;
+    width: 50%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+ }
+ .dishes-item__big:hover .grid-info {
+    background: #ffffff5e;
+    color: var(--azul-fuerte);
+ }
+ .grid-info h2{
+    font-size: 19px;
+    color: red;
+ }
+ .grid-info ul {
+    list-style: none;
+ }
+ .dishes-item__big img {
+    width: 100%;
+    height: 100%;
+ }
+ .dishes {
+     margin: 10px 0;
+ }
 .button {
     padding: 7px;
     font-size: 15px;
@@ -44,18 +136,38 @@ body {
     padding: 0;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 82%;
     background: var(--azul-claro);
     padding: 8px;
+    margin: 0 auto;
+}  
+.localizacion-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+    background: var(--blanco);
+    padding: 5px;
+}
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.mapa iframe {
+    width: 100%;
+    height: 100%;
 }
 .title-section1 {
     text-align: center;
     padding: 6px;
-    color: var(--blanco);
+    color: var(--azul-fuerte);
     padding-top: 10px;
     text-transform: uppercase;
     font-size: 23px;
-    background: var(--azul-claro);
+    background: var(--blanco);
 }
 .nosotros-general {
     justify-content: center;
@@ -68,15 +180,15 @@ body {
     width: 100%;
     margin: 0 auto;
     gap: 10px;
+    background: var(--blanco);
 }
 .nosotros {
     display: grid;
-    padding: 6px;
+    align-content: center;
+    padding: 0 6px;
     border-radius: 3px;
     width: 100%;
     text-align: start;
-    background: var(--azul-cielo);
-    box-shadow: var(--box-shadow);
 }
 .nosotros h3 {
     text-align: center;
@@ -99,243 +211,7 @@ body {
     height:40px;
 }
 .nosotros h3 {
-    color: var(--azul-claro);
-}
-.oxidente-container {
-    width: 100%; 
-    box-shadow: var(--box-shadow);
-    background-image: url(../img/currency_banner_1440_400.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position: start;
-    color: var(--blanco);
-}
-.oxidente-container-img {
-    margin: 0 auto;
-
-}
-.oxidente {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    height: 430px;
-    width: 100%;
-    margin: 0 auto;
-    background: #00000078;
-}
-.oxidente-container:hover  {
-    background-position: start;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background:transparent;
-    background-image: url(../img/currency_banner_1440_400.png);
-    transition: 1.4s ease all;
-}
-.oxidente h2 {
-    display: grid;
-    justify-content: flex-end;
-    align-items: center;
-    width: 320px;
-    margin: 0 auto;
-    font-size: 28px;
-}
-.oxidente-img {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-.oxidente-container-img {
-    background-image: url(../img/eu-eeuu.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: start;
-    background-position: center;
-}
-.oxidente-info {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-.oxidente p {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 320px;
-    margin: 0 auto;
-    font-size: 18px;
-    position: relative;
-    top: 35%;
-}
-.container-divisas {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    align-items: center;
-    justify-content: center;
-    background: var(--azul-claro);
-    box-shadow: var(--box-shadow);
-}
-.img-divisas {
-    width: 100%; 
-    height: 300px;
-    background-image: url(../img/cambios1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: start;
-    background-position: start;
-}
-.info-divisas {
-    display: block;
-    justify-content: center;
-    margin: 0 auto;
-    color: var(--blanco);
-}
-.contaoner-general-divisas h2 {
-    font-size: 28px;
-    color: var(--blanco);
-    text-align: center;
-}
-.info-divisas ul {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    font-size: 18px;
-    padding: 6px;
-}
-.section2-general {
-    background: var(--azul-claro);
-}
-.info-divisas li span {
-    font-weight: bold;
-}
-.africa-container {
-    width: 100%; 
-    background-image: url(../img/africa.jpg);
-    height: 450px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position: center;
-    box-shadow: var(--box-shadow);
-}
-.africa-container:hover .africa {
-    background: #41340a11;
-}
-.africa {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    background: #41340a75;
-}
-.africa h2 {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 320px;
-    margin: 0 auto;
-    color: var(--blanco);
-    font-size: 28px;
-}
-.africa-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 5px;
-}
-.africa-img .cemac {
-    height: 80px;
-    height: 80px;
-    border-radius: 100%;
-    background:  var(--blanco);
-    object-fit: contain;
-    box-shadow: var(--box-shadow);
-} 
-.africa-img .bdeao {
-    height: 70px;
-    height: 70px;
-    border-radius: 6px;
-    background: var(--blanco);
-    object-fit: contain;
-    padding: 5px;
-    box-shadow: var(--blanco);
-} 
-.africa .cemac:hover {
-    transform: scale(.9);
-    background: #D6DAC8;
-    rotate: 360deg;
-} 
-.africa .bdeao:hover {
-    transform: scale(.9);
-    background: #D6DAC8;
-} 
-.africa-info {
-    margin: 0 auto;
-}
-.africa p {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 320px;
-    margin: 0 auto;
-    color: #fff;
-    font-size: 18px;
-}
-.section2 {
-  /*  display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    margin: 0 auto;
-    background-image: url(../img/Map.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;  */
-    font-size: 17px;
-    background: var(--azul-claro);
-    color: var(--blanco);
-}  
-.info-section2 {
-    padding: 10px;
-    font-size: 18px;
-}
-.img-section1 {
-    display: block;
-    margin: 0 auto;
-  /*  background: #00000095;  
-    color: #fff;  */
-}
-.section-info-gmt {
-    display: grid;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-    padding: 7px;
-}
-.img-section1 h1 {
-    font-size: 26px;
-    text-align: center;
     color: var(--naranja);
-}
-.img-section1 img {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    margin: 0 auto;
-}
-.img-section1 h2 {
-    font-size: 23px;
-    color: var(--azul-fuerte);
-    margin: 0 auto;
 }
 /*
 
@@ -408,6 +284,14 @@ body {
     .title-mision {
         font-size: 26px;
     }
+
+    .grid-info {
+        font-size: 12.2px;
+     }
+    .grid-info h2{
+        font-size: 17px;
+        color: var(--naranja);
+     }
     .section2 {
         grid-template-columns: 1fr;
         width: 100%;
@@ -426,7 +310,12 @@ body {
     .oxidente {
         grid-template-columns: 1fr;
         font-size: 15px;
-    }.oxidente h2, .contaoner-general-divisas h2,  .africa-info h2, .section-info-gmt h2 {
+    }.oxidente h2,  .africa-info h2, .section-info-gmt h2 {
+        font-size: 22px;
+    }
+    .contaoner-general-divisas h2 {
+        padding: 10px 0;
+        color: var(--azul-fuerte);
         font-size: 22px;
     }
     .oxidente p {
@@ -463,6 +352,14 @@ body {
     }
 }
 @media screen and (max-width: 630px) {
+    .dishes-grid {
+        display: grid;  /* para determinar que es una grilla*/
+        grid-template-columns: none;  /* para que columna sea desplegable. que sea de una fraccion*/
+        grid-auto-rows: 1fr;  /* determina las filas*/
+        gap: 7px;  /* gap aqui le da el espacio entre las imagenes*/
+        justify-content: center ;  /* sirve para centrar la grilla*/
+        padding: 5px;
+     }
     .img-divisas {
         width: 100%; 
         position: absolute;
@@ -472,10 +369,10 @@ body {
     }
     .info-divisas {
         z-index: 1000;
-        width: 300px;
-        background: #1414144e;
+        width: 310px;
         position: relative;
         right: 10px;
+        color: var(--azul-fuerte);
     }
 
 }

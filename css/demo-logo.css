@@ -75,6 +75,15 @@
       align-items: center;
       height: 200px;
   }
+  .demo-container-color-azul {
+    display: block;
+    background: var(--naranja);
+    position: absolute;
+    width: 20%;
+    height: 170%;
+    top: -70px;
+    right: 0;
+  }
   .starwars-demo {
       display: flex;
       justify-content: center;
