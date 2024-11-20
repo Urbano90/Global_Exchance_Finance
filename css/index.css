@@ -72,7 +72,7 @@ body {
 }
 .dishes-grid {
     display: grid;  /* para determinar que es una grilla*/
-    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));  /* para que columna sea desplegable. que sea de una fraccion*/
+    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));  /* para que columna sea desplegable. que sea de una fraccion*/
     grid-auto-rows: 1fr;  /* determina las filas*/
     gap: 15px;  /* gap aqui le da el espacio entre las imagenes*/
     justify-content: center ;  /* sirve para centrar la grilla*/
@@ -80,11 +80,11 @@ body {
     padding-top: 10px;
  }
  .dishes-title {
-     color: #333;
-     font-weight: bold;
-     margin-bottom: 50px;
-     font-size: 1.8rem;
-     margin: 0;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 1.8rem;
+    margin: 0;
  }
  .dishes-item {
     width: 100%;
