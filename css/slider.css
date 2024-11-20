@@ -58,7 +58,7 @@
 .slider__section .slider__img{
     display: block;
     width: 17rem;
-    height: 230px;
+    height: 280px;
     object-fit: cover;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.327);
 }

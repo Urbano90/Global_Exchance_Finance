@@ -22,16 +22,62 @@ body {
     height: 100%;
     background-position: center;
     font-size: 14px;
-    background: var(--azul-claro);
+    background: #F5F5F5; 
 }
-
+.nosotros-general {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.nosotros-servicios {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 10px;
+    background: var(--blanco);
+    padding: 8px;
+}
+.nosotros {
+    display: grid;
+    align-content: center;
+    padding: 6px;
+    border-radius: 3px;
+    width: 100%;
+    text-align: start;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.327);
+}
+.nosotros h3 {
+    text-align: center;
+}
+.container-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--azul-marino);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    box-shadow: var(--box-shadow);
+    text-align: initial;
+    margin: 0 auto;
+}
+.nosotros img {
+    text-align: center;
+    width: 40px;
+    height:40px;
+}
+.nosotros h3 {
+    color: var(--naranja);
+}
 .dishes-grid {
     display: grid;  /* para determinar que es una grilla*/
     grid-template-columns: repeat(auto-fit, minmax(150px, 300px));  /* para que columna sea desplegable. que sea de una fraccion*/
     grid-auto-rows: 1fr;  /* determina las filas*/
-    gap: 5px;  /* gap aqui le da el espacio entre las imagenes*/
+    gap: 15px;  /* gap aqui le da el espacio entre las imagenes*/
     justify-content: center ;  /* sirve para centrar la grilla*/
     padding: 5px;
+    padding-top: 10px;
  }
  .dishes-title {
      color: #333;
@@ -71,7 +117,7 @@ body {
     font-size: 13.2px;
     color: var(--blanco);
     padding: 5px;
-    background: #00000067;
+    background: #00000076;
     height: 100%;
     display: grid;
     justify-content: center;
@@ -137,23 +183,21 @@ body {
     justify-content: center;
     align-items: center;
     width: 82%;
-    background: var(--azul-claro);
     padding: 8px;
     margin: 0 auto;
 }  
 .localizacion-nosotros {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
+    height: 250px;
     background: var(--blanco);
-    padding: 5px;
 }
 .mapa {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100%;
 }
 .mapa iframe {
@@ -169,50 +213,7 @@ body {
     font-size: 23px;
     background: var(--blanco);
 }
-.nosotros-general {
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 10px;
-}
-.nosotros-servicios {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    gap: 10px;
-    background: var(--blanco);
-}
-.nosotros {
-    display: grid;
-    align-content: center;
-    padding: 0 6px;
-    border-radius: 3px;
-    width: 100%;
-    text-align: start;
-}
-.nosotros h3 {
-    text-align: center;
-}
-.container-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--azul-marino);
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
-    box-shadow: var(--box-shadow);
-    text-align: initial;
-    margin: 0 auto;
-}
-.nosotros img {
-    text-align: center;
-    width: 40px;
-    height:40px;
-}
-.nosotros h3 {
-    color: var(--naranja);
-}
+
 /*
 
 .img-section2 {
@@ -290,7 +291,6 @@ body {
      }
     .grid-info h2{
         font-size: 17px;
-        color: var(--naranja);
      }
     .section2 {
         grid-template-columns: 1fr;
